@@ -1,5 +1,5 @@
 //variable "COMPONENTS" {
-//default = ["frontend", "catalogue", "mongodb"]
+//  default = ["frontend", "catalogue", "mongodb"]
 //}
 //
 //variable "PORTS" {
@@ -8,8 +8,17 @@
 
 variable "COMPONENTS" {
   default = {
-    "frontend"  = 80
-    "mongodb"   = 27107
-    "catalogue" = 8080
+    "frontend" = {
+      name = "frontend"
+      port = 80
+    }
+    "mongodb" = {
+      name = "mongodb"
+      port = 27017
+    }
+    "catalogue" = {
+      name = "catalogue"
+      port = 8080
+    }
   }
 }
