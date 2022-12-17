@@ -51,3 +51,8 @@ variable "URL" {}
 output "URL" {
   value = var.URL
 }
+
+variable "SHELL" {}
+output "SHELL" {
+  value = var.SHELL
+}
